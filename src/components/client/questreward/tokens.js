@@ -1,0 +1,51 @@
+import React, { useState, useEffect } from 'react';
+import { InputText } from 'primereact/inputtext';
+import Info_Icon from '../../../assets/img/info.svg';
+
+const Tokens = ({ onChangeToken }) => {
+  const [token, setToken] = useState({
+    type: 'token',
+    address: '',
+    amount: '',
+  });
+
+  useEffect(() => {
+    onChangeToken(token);
+  }, [token]);
+
+  return (
+    <div className="reward-card-right">
+      <p className="title">Token</p>
+      <div className="field">
+        <div className="label-row">
+          <label htmlFor="title1" className="block">
+            Contract address
+            <img src={Info_Icon} className="info-icon" />
+          </label>
+        </div>
+        <InputText
+          id="title1"
+          aria-describedby="username1-help"
+          className="ipt-txt"
+          onChange={(e) => setToken({ ...token, address: e.target.value })}
+        />
+      </div>
+      <div className="field">
+        <div className="label-row">
+          <label htmlFor="title2" className="block">
+            Amount
+            <img src={Info_Icon} className="info-icon" />
+          </label>
+        </div>
+        <InputText
+          id="title2"
+          aria-describedby="username1-help"
+          className="ipt-txt"
+          onChange={(e) => setToken({ ...token, amount: e.target.value })}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Tokens;

@@ -1,0 +1,2768 @@
+.font-loader {
+    font-family: 'Work Sans';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* width: 1440px; */
+    font-family: 'Work Sans';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #141414;
+    background-color: #EFF3F6;
+}
+
+/* B3 : 70% */
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+#stripes {
+    background-image: linear-gradient(140deg, #eff3f6 40%, #dedede 40%, #dedede 50%, #fff 50%, #fff 50%, #eff3f6 50%, #eff3f6 90%, #dedede 90%, #dedede 100%, #fff 100%, #fff 100%);
+    background-size: 10.00px 8.39px;
+    opacity: 0.8;
+}
+
+.donut {
+    border: 4px solid transparent;
+    border-radius: 100px;
+    height: 15px;
+    width: 15px;
+}
+
+
+.quest-container {
+    display: flex;
+    min-width: 290px;
+    max-width: 33%;
+    height: 100%;
+    background: #F3F5F7;
+    border-radius: 8px;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.button {
+    background: transparent;
+    height: 42px;
+    padding-left: 29px;
+    padding-right: 29px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #141414;
+    border: 1px solid #141414;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.admin-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+.admin-icon {
+    margin-left: 12.5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease 0s;
+}
+
+
+.admin-sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #EFF3F6;
+    position: fixed;
+    transition: transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99) 0s;
+}
+
+/********************************** navbar**********************************/
+.admin-navbar {
+    /* width:  100vw; */
+    position: fixed;
+    left: 200px;
+    top: 0px;
+    width: calc(100% - 200px);
+    height: 84px;
+    background: #EFF3F6;
+    z-index: 900;
+    text-align: left;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.disp-sidebar-icon {
+    display: none;
+    margin-left: 12px;
+}
+
+.admin-navbar .navbar-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-navbar .admin-navbar-titles {
+    /*height: 84px;*/
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-navbar .admin-navbar-btns {
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-navbar a {
+    text-decoration: none;
+    /* font-family: "Work Sans"; */
+    font-size: 18px;
+    color: #181818;
+    padding: 10px 16px 10px 16px;
+}
+
+.admin-navbar .admin-navbar-btn-ether {
+    width: 43px;
+    height: 43px;
+    background-image: url("../ether.svg");
+    background-repeat: no-repeat;
+    /* margin-right: 21px; */
+}
+
+.admin-navbar .admin-navbar-btn-ring {
+    width: 43px;
+    height: 43px;
+    background-image: url('../ring.svg');
+    background-repeat: no-repeat;
+    /* margin-right: 21px; */
+}
+
+.admin-navbar .dropdown-container {
+    position: relative;
+}
+
+.admin-navbar .dropdown-header {
+    height: 45px;
+    border: 1px solid #141414;
+    border-radius: 12px;
+    padding-left: 26px;
+    padding-right: 26px;
+    z-index: 10000 !important;
+}
+
+.admin-navbar .dropdown-listcontainer {
+    width: 100%;
+    border: 1px solid #1414141A;
+    background-color: #EFF3F6;
+    /* border-radius: 12px; */
+    position: absolute;
+    top: 53px;
+}
+
+.admin-navbar .drop-down-img {
+    width: 16px;
+    height: 16px;
+}
+
+.admin-navbar .dropdown-list {
+    margin: 0;
+    padding: 5px;
+}
+
+.admin-navbar .dropdown-list .list-item {
+    list-style-type: none;
+    padding: 0 26px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-navbar .dropdown-list .list-item:hover {
+    background-color: white;
+    border: #141414;
+}
+
+
+/********************  end client navbar *************************/
+
+
+.admin-sidebar .admin-logo {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+.admin-sidebar .admin-logo img {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
+
+.admin-sidebar .sidebar-item {
+    height: 66px;
+}
+
+.admin-sidebar-btn {
+    width: 184px;
+    height: 45px;
+    margin: 10px 8px 11px 8px;
+    color: #141414;
+    text-align: left;
+    border-radius: 12px;
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.admin-sidebar-btn:hover,
+.admin-sidebar .sidebar-item>a.active {
+    background: #833CFC;
+    color: white;
+}
+
+.admin-sidebar-btn-ele {
+    margin-left: 17px;
+}
+
+.sidebar_icon_container {
+    position: relative;
+    display: inline;
+    margin-left: 16px;
+    height: 18px;
+}
+
+.sidebar-btn-img-active {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.admin-sidebar-btn:hover .sidebar-btn-img-active {
+    display: inline;
+}
+
+.layout-content {
+    margin-left: 200px;
+    padding-top: 84px;
+}
+
+.client-content-page {
+    padding: 32px 32px 32px 32px;
+    border-top-left-radius: 8px;
+    background-color: white;
+}
+
+/****************** Admin quest menubar ***************/
+.admin-quest-title {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    /* margin-bottom: 17px; */
+    margin: 0px;
+}
+
+.admin-quest-menuitem {
+
+    padding: 9px 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #141414;
+    margin-right: 4px;
+    height: 36px;
+}
+
+.admin-quest-menuitem:hover,
+.admin-quest-menus a.active {
+    background: #1BC28C;
+    border-radius: 12px;
+    color: white;
+}
+
+.admin-quest-memus-preview {
+    margin: 17px 0px;
+}
+
+.admin-quest-preview-btn {
+    border: 1px solid #141414;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 12px 26.5px;
+    height: 42px;
+}
+
+
+/*** Admin quest menubar end ***/
+
+/****** Admin quest main container begin ****/
+.client-main {
+    padding: 32px 32px;
+}
+
+.admin-quest-container {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.admin-quest-container .quest-left-containter {
+    width: 100%;
+    /*min-width: 584px;*/
+}
+
+.admin-align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.admin-setup-component {
+    width: 100%;
+    /*height: 477px;*/
+    /*min-height: 100px;*/
+    background: #F3F5F7;
+    border-radius: 8px;
+    /*margin-right: 16px;*/
+    padding: 24px;
+}
+
+.admin-setup-component .admin-setup-title {
+    margin-bottom: 10px;
+}
+
+.admin-setup-component .title {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    margin: 0 8.5px 0 0;
+}
+
+.admin-setup-component .ipt-text-div {
+    /* height: 437px; */
+}
+
+.ipt-text-div .description-empty .rdw-editor-main {
+    border: 1px solid #EE1C1CB1
+}
+
+.ipt-text-div .rdw-option-wrapper {
+    width: 46px;
+    height: 32px;
+    border: 0.75px solid #CDDDE9;
+    border-radius: 6px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.ipt-text-div .rdw-option-active {
+    background-color: #833CFC;
+    color: white;
+}
+
+.admin-setup-component .dropzone-div {
+    text-align: center;
+    padding: 20px;
+    color: #305CF6;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px #305CF6 dashed;
+    border-radius: 8px;
+    height: 92%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-setup-component .dropzone-div-emtpy {
+    text-align: center;
+    padding: 20px;
+    color: #EE1C1CB3;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px #EE1C1CB3 dashed;
+    border-radius: 8px;
+    height: 92%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-setup-component .dropzone-comment {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(20, 20, 20, 0.3);
+}
+
+.admin-setup-component .drag-drop-element {
+    margin: 0 0 10px 0;
+}
+
+.admin-setup-component .date-label {
+    margin-right: 10px;
+}
+
+.admin-setup-component .quest-setup-date-btn {
+    padding: 13.5px 16px;
+    background-color: white;
+
+    font-weight: 400;
+    font-size: 14px;
+    width: 223px;
+    height: 16px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.admin-setup-component .quest-setup-date-noending-btn {
+    border: 1px dotted rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    border-bottom: none;
+    padding-top: 1rem;
+    height: 16px;
+
+    font-size: 13.47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.admin-setup-component .ipt_title {
+    height: 45px;
+    width: 100%;
+    padding: 12.5px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+}
+
+.admin-setup-component .ipt_title_empty {
+    height: 45px;
+    width: 100%;
+    padding: 12.5px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #EE1C1CB3;
+    border-radius: 8px;
+}
+
+.admin-setup-component .ipt_title_comment {
+    font-size: 14px;
+    color: #EE1C1CB3;
+}
+
+.admin-setup-component .pick-date {}
+
+.admin-setup-component .pick-date-empty {
+    border: 1px solid #EE1C1CB3;
+}
+
+.ipt-text-div input[type=text]:focus {
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    /* background-color: yellow; */
+    color: #141414;
+}
+
+.admin-setup-component .quest-setup-img-containter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 370px;
+    /* border: 1px dotted #305CF6; */
+    border-radius: 8px;
+    margin-bottom: 12px;
+    /* height: 80%; */
+}
+
+.admin-setup-component .quest-setup-img {
+    max-height: 374px;
+}
+
+.admin-setup-component .quest-setup-del-btn {
+
+    border-radius: 12px !important;
+    color: #141414 !important;
+    border: 1px solid #141414 !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    background-color: #F3F5F7;
+}
+
+.admin-quest-container .noneed {
+    background-color: white;
+}
+
+.admin-quest-container>.admin-setup-title {
+    margin: 0 8.5px 0 0;
+}
+
+.editor-class {
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    padding: 0 16px;
+    height: 300px !important;
+}
+
+.toolbar-class {
+    background-color: #F3F5F7 !important;
+    border: none !important;
+
+    display: flex !important;
+    justify-content: space-between !important;
+
+}
+
+.rdw-option-wrapper {
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+}
+
+.admin-quest-next-btn-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.admin-quest-next-btn {
+    background: #833CFC !important;
+    border-radius: 12px !important;
+    font-family: Work Sans;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: white;
+    line-height: 16px !important;
+    padding: 17.5px 0px !important;
+    cursor: pointer;
+    margin-left: 20px !important;
+    height: 53px !important;
+    width: 200px !important;
+    justify-content: center;
+}
+
+.admin-quest-back-btn {
+    border: 1px solid #141414 !important;
+    border-radius: 12px !important;
+    color: #141414 !important;
+    font-family: Work Sans;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 16px !important;
+    padding: 17.5px 0px !important;
+    cursor: pointer;
+    width: 198px !important;
+    height: 53px !important;
+    justify-content: center;
+}
+
+.quest-right-container {
+    width: 100%;
+    /*width: 552px;*/
+    /*border: 1px solid red;*/
+    text-align: left;
+}
+
+.quest-entries-group {
+    width: 558px;
+    height: 65px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-entries-group-txt {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.admin-comment,
+.quote-entries-del-comment {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.quest-entries-active-title {
+    margin-bottom: 12px;
+}
+
+.quest-entries-active-element {
+    width: 100%;
+    height: 495px;
+    border: 1px dotted rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+}
+
+.quest-entries-active-element-active {
+    width: 100%;
+    height: 495px;
+    border-radius: 8px;
+    border: 1px dotted #EE1C1CB3;
+}
+
+.quest-entries-comment {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(20, 20, 20, 0.7);
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.small-comment {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.warning {
+    color: #EE1C1CB3 !important;
+}
+
+.quest-entries-btn-group {
+    margin-top: 100px;
+}
+
+.quest-eligibility-title {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.quest-checkbox {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 4px;
+    /* padding: 10px, 16px, 10px, 16px; */
+    margin: 0 !important;
+}
+
+input[type='checkbox'] {
+    accent-color: #1BC28C;
+    color: white;
+}
+
+.quest-checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.quest-calendar-container {
+    position: relative;
+}
+
+.quest-calendar-container-empty .cal-btn {
+    border: 1px solid #EE1C1CB1;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: white;
+    height: 45px;
+    padding-left: 16px;
+    padding-right: 15.5px;
+    width: 100%;
+}
+
+.quest-calendar-container .calendar-container {
+    position: absolute;
+    bottom: 53px;
+    z-index: 100;
+}
+
+.quest-calendar-container .cal-btn {
+    height: 45px;
+    padding-left: 16px;
+    padding-right: 15.5px;
+    width: 100%;
+    border: 1px solid #1414141A;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: white;
+}
+
+.quest-calendar-container .active-btn {
+    border: 1px solid #305CF6;
+}
+
+.quest-calendar-container .react-calendar {
+    /* min-width: 260px;
+    min-height: 260px; */
+    width: 100%;
+    height: auto;
+    color: #141414 !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    font-family: "Work Sans" !important;
+    border: 0.75px solid #305CF6;
+    border-radius: 8px;
+    line-height: 24px;
+    /* padding: 12px; */
+}
+
+.quest-calendar-container .react-calendar__tile {
+    color: #141414;
+    font-size: 18px !important;
+    font-weight: 400;
+    font-family: "Work Sans" !important;
+}
+
+.quest-calendar-container .react-calendar__navigation__label__labelText {
+    color: #141414 !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    font-family: "Work Sans" !important;
+}
+
+.quest-calendar-container .react-calendar__navigation {}
+
+.quest-calendar-container .react-calendar__tile {
+    border-radius: 6px;
+}
+
+.quest-calendar-container .react-calendar__tile--active,
+.quest-calendar-container .react-calendar__tile--active {
+    background: #6f48eb;
+    color: white;
+}
+
+/* .quest-calendar-container .react-calendar__navigation button {
+  color: #141414;
+  font-size: 20px !important;
+  margin-top: 8px;
+  border: 0.75px solid #CDDDE9 !important;
+  border-radius: 8px;
+  background-color: #EFF3F6 !important;
+  width: 24px !important; height: 24px !important;
+  display: flex; align-items: center; justify-content: center;
+ } */
+/***** Admin quest main container end ******/
+
+/****************  Client Quest Entries   *****************/
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #EFF3F6; */
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 12px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+}
+
+.accordion-item .active {
+    background-color: #EFF3F6;
+}
+
+.accordion-title .title-part {
+    height: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accordion-title p.title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.accordion-title p.comment {
+    font-size: 18px;
+    color: rgba(20, 20, 20, 0.7);
+    margin: 0px;
+}
+
+.disabled-link {
+    pointer-events: none;
+    color: gray;
+}
+
+.quest_entries_social_btns_group {
+    margin-top: 10px;
+}
+
+.quest_entries_social_btn {
+    color: #141414 !important;
+    font-size: 16px !important;
+    border: 1px solid rgba(20, 20, 20, 0.1) !important;
+    border-radius: 8px !important;
+    width: 112px !important;
+    height: 44px !important;
+    padding: 0px !important;
+    justify-content: center;
+    align-items: center;
+    /* margin:0 0 0 8px !important; */
+
+    margin-top: 12px;
+}
+
+.quest_entries_social_btn .px-3 {
+    padding: 0 0 0 8px !important;
+}
+
+.accordion-content-item {
+    height: 60px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-top: 8px;
+    background-color: #E6ECF1;
+    display: flex;
+    align-items: center;
+}
+
+/*.accordion-content{
+}*/
+
+.accordion-content-item .title {
+    margin-left: 16.5px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #141414;
+}
+
+.accordion-content .btn {
+    padding: 12px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #141414;
+}
+
+.accordion-content .active {
+    background-color: #E6ECF1;
+}
+
+.activity-item {
+    width: 100%;
+    padding: 24px;
+    background: #EFF3F6;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.ipt-box {
+    margin-bottom: 1rem;
+}
+
+.ipt-box .subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #141414;
+}
+
+.ipt-box .title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #141414;
+}
+
+.title-bold {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ipt-box .comment {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(20, 20, 20, 0.3);
+}
+
+.activity-item .info-img {
+    width: 20px;
+    height: 20px;
+}
+
+.activity-item a {
+    color: #305CF6;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.activity-item .add-more {
+    margin-top: 2.5px;
+}
+
+.activity-item .close-btn {
+    text-align: right;
+    margin-top: -24px;
+    margin-right: -14px;
+    /* margin-right: -20px; */
+}
+
+.activity-item .close-btn-in {
+    text-align: right;
+    margin-top: 4px;
+    margin-right: -4px;
+}
+
+.activity-item .option-btn {
+    background-color: white;
+    font-weight: 400;
+    font-size: 13.4743px;
+    border: 0.748571px solid #CDDDE9;
+    border-radius: 0.5rem;
+    width: 94px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.activity-item .option-btn.active {
+    background-color: #1BC28C;
+    border: none;
+    color: white;
+}
+
+.activity-item .option-btn-long.active {
+    background-color: #1BC28C;
+    border: none;
+    color: white;
+}
+
+.activity-item .option-btn-long {
+    background-color: white;
+    font-weight: 400;
+    font-size: 13.4743px;
+    border: 0.748571px solid #CDDDE9;
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 36px;
+}
+
+/*********** Quest entries end *********/
+
+
+/*********** Quest elegibility start *******/
+.quest-eligibility-group {
+    width: 100%;
+    /* height: 65px; */
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quest-left-containter .active {
+    background-color: #EFF3F6 !important;
+}
+
+.quest-eligibility-group .quest-elegibility-title-box {
+    display: flex;
+    align-items: center;
+}
+
+.quest-eligibility-group .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #141414;
+    margin: 0;
+}
+
+.quest-eligibility-group .comment {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(20, 20, 20, 0.7);
+    margin: 12px 0 0 0;
+}
+
+.soon_img {
+    width: 40px;
+    height: 25px;
+    margin-left: -20px;
+    z-index: 1000;
+}
+
+.soon_img_setup {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: 40px;
+    height: 25px;
+    z-index: 1000;
+}
+
+.formula .soon_img {
+    position: absolute;
+    right: 5%;
+    top: -15%;
+
+}
+
+.quest-eligibility-container .quest-right-container {
+    margin-top: 30px;
+}
+
+.elegibility-card {
+
+    background-color: #EFF3F6;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.elegibility-card .title {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #141414;
+}
+
+/* .elegibility-card .subtitle{
+  font-size: 14px; font-weight: 400; color: #141414;
+} */
+.elegibility-card .nft-btn,
+.reward-card-right .nft-btn {
+    width: 95px !important;
+    height: 35px !important;
+    background: white !important;
+    color: #141414 !important;
+    font-size: 16px !important;
+    border: 1px solid rgba(20, 20, 20, 0.1) !important;
+    border-radius: 8px !important;
+}
+
+.elegibility-card .field>label {
+    margin-bottom: 0px !important;
+}
+
+.elegibility-card .label-row {
+    display: flex !important;
+    align-items: center;
+}
+
+.label-row label {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.elegibility-card .info-icon {
+    width: 13px;
+    height: 13px;
+    opacity: 0.3;
+    margin-left: 6.5px;
+}
+
+.add_more {
+    color: #305CF6;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/*********** Quest elegibility end   *******/
+
+/**************  Quest Reward start  **************/
+.quest-reward-card {
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.quest-reward-card .main-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.quest-reward-card .formula {
+    margin-top: 16px;
+}
+
+.quest-reward-card .formula-element {
+    background-color: #EFF3F6 !important;
+    height: 46px !important;
+    border: 0.75px solid #CDDDE9;
+    border-radius: 8px !important;
+    color: #141414 !important;
+    justify-content: center !important;
+    padding: 0 8px !important;
+}
+
+.quest-reward-card .formula-element.button-active {
+    background-color: #1BC28C !important;
+    color: white !important;
+    border: none;
+}
+
+.quest-reward-card .network {
+    background-color: #EFF3F6 !important;
+    border: 0.75px solid #CDDDE9 !important;
+    /* max-width: 82px !important; */
+    max-height: 46px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quest-reward-card .network.button-active {
+    background-color: #1BC28C !important;
+    color: white !important;
+}
+
+.quest-reward-card .formula .reward_btn {
+    justify-content: center !important;
+    height: 46px !important;
+    border: 1px dotted rgba(20, 20, 20, 0.1) !important;
+    border-radius: 8px !important;
+    background-color: white !important;
+    color: #141414 !important;
+    /* z-index: 999 !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quest-reward-card .formula-element .title {
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.quest-reward-card .reward-type-element {
+    border: 0.75px solid #CDDDE9;
+    border-radius: 8px;
+    height: 52px;
+    padding: 14px 18px 14px 24px;
+    margin-bottom: 8px;
+}
+
+.quest-reward-card .active {
+    background-color: #EFF3F6;
+}
+
+.quest-reward-card .title-container {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.quest-reward-card .title-container .title {
+    margin-left: 12px;
+}
+
+.reward-right-container {
+    width: 100%;
+    padding: 24px 252px 24px 24px;
+    border-radius: 8px;
+    /* margin-top: 8px; */
+    /*min-width: 576px;*/
+    background-color: #EFF3F6;
+    border-radius: 8px;
+}
+
+.whitelist {
+    padding: 24px;
+}
+
+.reward-right-container .title-container {
+    display: flex;
+    align-items: center;
+}
+
+.reward-right-container .title {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #141414;
+}
+
+.reward-right-container .ipt-txt {
+    width: 300px;
+    height: 54px;
+    border-radius: 8px;
+}
+
+.elegibility-card .nft-btn {
+    width: 95px;
+    height: 35px;
+    border: 1px solid #CDDDE9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elegibility-card .nft-btn.active {
+    background-color: #1BC28C !important;
+    border: none;
+}
+
+
+.reward-right-container .nft-btn-container .nft-btn-row {
+    margin-bottom: 8px;
+}
+
+.reward-right-container .nft-btn-container .nft-btn {
+    width: 95px;
+    height: 35px;
+    border: 1px solid #CDDDE9;
+    border-radius: 8px;
+}
+
+.reward-right-container .deploy-btn {
+    width: 100%;
+    height: 53px;
+    background-color: #833CFC;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.reward-right-container .dropzone-div {
+    border: 1px dashed #305CF6;
+    border-radius: 8px;
+    height: 130px;
+    padding-top: 12px;
+    margin-bottom: 1rem;
+}
+
+.reward-card-right .ipt_title {
+    height: 45px;
+    width: 100%;
+    padding: 12.5px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.reward-card-right input:focus {
+    border: 1px solid rgba(20, 20, 20, 1);
+}
+
+.reward-right-container .ipt-text-div {
+    margin-bottom: 1rem;
+}
+
+/**************  Quest Reward end  **************/
+
+/*************** Analytics start ****************/
+.analytics-sum {
+    width: 100%;
+    padding: 16px 24px;
+    height: 116px;
+    background-color: #F3F5F7;
+    border-radius: 8px;
+    margin-bottom: 37px;
+}
+
+.analytics-sum .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.analytics-sum .bottom-text-container {
+    height: 44px;
+}
+
+.analytics-sum .count {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.analytics-sum .percentage {
+    color: #1BC28C;
+    background: linear-gradient(0deg, rgba(27, 194, 140, 0.2), rgba(27, 194, 140, 0.2)), #FFFFFF;
+    border-radius: 8px;
+    width: 65px;
+    height: 24px;
+}
+
+.client-analytics-chart {
+    margin-bottom: 42px;
+}
+
+.client-analytics-chart .main-part {
+    background-color: #F3F5F7;
+}
+
+.client-analytics-chart .toolbar {
+    margin-bottom: 11px;
+}
+
+.client-analytics-chart .toolbar .left-btns .btn {
+    padding: 7px 10.5px;
+    background: #EFF3F6;
+    border: 0.75px solid #CDDDE9;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.date-switcher .btn {
+    padding: 9px 12px;
+    background: #EFF3F6;
+    border: 0.75px solid #CDDDE9;
+    border-radius: 6px;
+    font-size: 13.47px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        background: #833CFC;
+        color: white;
+    }
+
+    &.active {
+        background: #833CFC;
+        color: white;
+    }
+}
+
+.client-analytics-chart .toolbar .right-btns .date-label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.client-analytics-chart .toolbar .right-btns .swictch-btn {
+    margin-right: 35px;
+}
+
+.client-analytics-chart .toolbar .right-btns .btn:hover {
+    background: #833CFC;
+    color: white;
+}
+
+.client-analytics-chart .chart {
+    background: #EFF3F6;
+    min-height: 100px;
+}
+
+.doughnut {
+    margin-bottom: 38px;
+    // width: 50%;
+}
+
+.doughnut .toolbar {
+    margin-bottom: 28px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.doughnut .toolbar .btn {
+    border: 0.75px solid #CDDDE9;
+    border-radius: 5.98857px;
+    background-color: #EFF3F6;
+    font-size: 13.47px;
+    font-weight: 400;
+    padding: 9px 10px;
+}
+
+.doughnut .toolbar .btn:hover {
+    background: #833CFC;
+    color: white;
+    cursor: pointer;
+}
+
+.doughnut .doughnut {
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    padding: 1rem;
+    /* width: 100%; */
+}
+
+.doughnut .chart-container {
+    display: inline;
+    position: relative;
+}
+
+.doughnut .doughnut .chart {
+    width: 240px;
+    height: 246px;
+}
+
+.doughnut .doughnut .chart-inner {
+    /* margin-left: -50%; */
+    position: absolute;
+    left: calc(50% - 120px);
+}
+
+.doughnut .doughnut .chart .title-percent {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.doughnut .doughnut .chart .percent {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.doughnut .doughnut .chart .seperate {
+    width: 120px;
+    background: rgba(20, 20, 20, 0.2);
+    margin: 0;
+}
+
+.doughnut .doughnut .chart .txt-data {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(20, 20, 20, 0.7);
+    line-height: 24px;
+}
+
+.doughnut .title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.analytics-karma-quests {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-karma-quests .p-column-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-name {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-name .p-column-header-content {
+    width: 190px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-karma {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-karma .p-column-header-content {
+    width: 60px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-quests {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-quests .p-column-header-content {
+    width: 70px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-nft {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-nft .p-column-header-content {
+    width: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-joindate {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-joindate .p-column-header-content {
+    width: 120px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-social {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-social .p-column-header-content {
+    width: 130px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-usd {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-usd .p-column-header-content {
+    width: 111px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-token {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #141414 !important;
+    background-color: #F3F5F7 !important;
+    padding: 3px 0px !important;
+    height: 24px !important;
+}
+
+.analytics-token .p-column-header-content {
+    width: 150px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-datatable-cell {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #667085 !important;
+    background-color: #F3F5F7 !important;
+    height: 48px !important;
+    padding: 8px !important;
+    text-align: center !important;
+}
+
+.p-data-table .p-column-header-content {
+    justify-content: center !important;
+}
+
+.analytics-title-bar {
+    margin-bottom: 12px;
+}
+
+.analytics-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #141414;
+}
+
+.layout-settings {
+    width: 156px;
+}
+
+.layout-settings .title {
+    height: 42px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #141414;
+    border: 1px solid #141414;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.client-analytics-chart .main-part {
+    position: relative;
+}
+
+.client-analytics-chart .main-part .grid-part {
+    height: 343px;
+    margin-right: 4px;
+    margin-bottom: 18.51px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.client-analytics-chart .main-part .grid-part .col-4 {
+    width: 30.77%;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #141414;
+}
+
+.client-analytics-chart .main-part .grid-part .col-5 {
+    width: 38.46%;
+    padding: 0;
+    margin: 0;
+    border-left: 1px dotted #141414;
+}
+
+.client-analytics-chart .main-part .grid-part .col-4-right {
+    width: 30.77%;
+    padding: 0;
+    margin: 0;
+    border-left: 1px dotted #141414;
+}
+
+.client-analytics-chart .main-part .grid-part .quest-diagram-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.quest-diagram {
+    height: 45px;
+    padding-left: 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0.2px solid #14141433;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    position: absolute;
+}
+
+.client-analytics-chart .main-part .comment-container {
+    padding: 35px 51px 24px 34px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.client-analytics-chart .main-part .comment-container-request {
+    padding: 35px 59px 24px 34px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.client-analytics-chart .main-part .month-comment {
+    color: #141414;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.date-comment {
+    color: #141414;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 18px;
+}
+
+.month-btn {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 0.75px solid #CDDDE9;
+    border-radius: 6px;
+
+    &hover {
+        cursor: pointer;
+    }
+}
+
+.client-analytics-chart .main-part .chk-box-discord {
+    width: 99px;
+    height: 40px;
+    border-bottom: 2px solid #833CFC;
+}
+
+.client-analytics-chart .main-part .chk-box-twitter {
+    width: 99px;
+    height: 40px;
+    border-bottom: 2px solid #1BC28C;
+}
+
+.client-analytics-chart .main-part .chk-box-marko {
+    width: 99px;
+    height: 40px;
+    border-bottom: 2px solid #E859B9;
+}
+
+.client-analytics-chart .main-part .p-checkbox .p-checkbox-box .p-checkbox-icon.p-icon {
+    width: 9px !important;
+    height: 9px !important;
+}
+
+.client-analytics-chart .main-part .p-checkbox .p-checkbox-box {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 4px !important;
+}
+
+.client-analytics-chart .main-part .p-checkbox {
+    width: 14px !important;
+    height: 14px !important;
+
+}
+
+.client-analytics-chart .main-part .chk-show-box {
+    /* width: 16px !important;
+    height: 16px !important; */
+}
+
+.client-analytics-chart .main-part .chk-show-comment {
+    font-size: 16px;
+    font-weight: 400;
+    color: '#141414'
+}
+
+/*************** Analytics end   ****************/
+
+
+/*************** Admin Journeys start *****************/
+.admin-journeys-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-journeys-header-title h3 {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    margin: 0px;
+}
+
+.admin_journeys-header-filter {
+    position: relative;
+
+    button {
+        width: 100px;
+        height: 42px;
+        border-color: #1414141A !important;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        span:first-child {
+            color: #141414B2;
+        }
+
+        span:last-child {
+            color: #141414;
+        }
+    }
+
+    .filter-dropdown-container {
+        width: 220px;
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .filter-dropdown-list-container {
+        position: absolute;
+        z-index: 1;
+        background: white;
+        top: 50px;
+        right: 0;
+    }
+
+    ul.filter-dropdown-list {
+        margin: 0;
+        list-style: none;
+        padding: 8px;
+        border: 1px solid #F2F4F7;
+        box-shadow: 0px 4px 6px -2px #10182808, 0px 12px 16px -4px #10182814;
+
+        li {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            gap: 8px;
+
+            div.p-checkbox-box:hover,
+            div.p-checkbox-checked div.p-checkbox-box,
+            div.p-checkbox-checked div.p-checkbox-box:hover {
+                border-color: #1BC28C;
+            }
+
+            div.p-checkbox-box {
+                border: 1px solid #141414B2;
+            }
+
+            div.p-checkbox-checked div.p-checkbox-box,
+            div.p-checkbox-checked div.p-checkbox-box:hover {
+                background: #1BC28C;
+            }
+        }
+
+        li:hover {
+            background: #EFF3F6;
+        }
+    }
+}
+
+.admin-journeys-template-list {
+    display: flex;
+    justify-content: start;
+    padding: 24px 0;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @media (min-width: 1441px) {
+        gap: 64px;
+    }
+
+    @media (max-width: 1024px) {
+        gap: 24px;
+    }
+
+
+    .admin-journey-card {
+        width: 276px;
+        padding: 24px;
+        border-width: 0.5px 2px 2px 0.5px;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #833CFC;
+        margin-bottom: 24px;
+        position: relative;
+
+        .soon-icon {
+            position: absolute;
+            z-index: 1;
+            right: 10px;
+            top: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            width: 235px;
+        }
+
+        .admin-journey-card-header {
+            position: relative;
+
+            .admin-journey-card-title {
+                display: flex;
+                justify-content: space-between;
+
+                >span:first-child {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: #141414;
+                }
+
+                .admin-journey-card-title-text {
+                    width: 180px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+
+                button {
+                    width: 23px;
+                    height: 23px;
+                    border: 0.5px solid #1414141A;
+                    padding: 10px;
+                    border-radius: 4px;
+
+                    span:before {
+                        color: #000000;
+                    }
+                }
+            }
+
+            .admin-journey-card-subtitle {
+                display: flex;
+                gap: 4px;
+
+                span:first-child {
+                    width: 16px;
+                    height: 16px;
+                    text-align: center;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                span:last-child {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #141414B2;
+                }
+            }
+
+            div.dropdown-list-container {
+                position: absolute;
+                z-index: 10;
+                width: 220px;
+                background: white;
+                right: 0;
+            }
+
+            ul.dropdown-list {
+                margin: 0;
+                list-style: none;
+                padding: 8px;
+                border: 1px solid #F2F4F7;
+                box-shadow: 0px 4px 6px -2px #10182808, 0px 12px 16px -4px #10182814;
+
+                li {
+                    width: 100%;
+                    padding: 12px;
+                    border-radius: 8px;
+                    gap: 8px;
+                }
+
+                li:hover {
+                    background: #EFF3F6;
+                }
+            }
+        }
+
+        .admin-journey-card-tags {
+            margin-top: 20px;
+            display: block;
+            height: 50px;
+
+            span {
+                display: inline-block;
+                padding: 1px 4px 1px 4px;
+                border-radius: 4px;
+                margin-right: 4px;
+                margin-bottom: 4px;
+                height: 22px;
+                border: 1px solid #246CF633;
+                font-size: 11px;
+                line-height: 18px;
+                text-align: center;
+                color: #141414B2;
+            }
+        }
+
+        .admin-journey-card-content {
+            height: 72px;
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #141414B2;
+            }
+        }
+
+        .admin-journey-card-footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            button,
+            a {
+                text-align: center;
+                text-decoration: none;
+                width: 110px;
+                height: 38px;
+                border-radius: 12px;
+                gap: 10px;
+
+                span {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+
+            a {
+                border: 1px solid #141414;
+
+                span {
+                    vertical-align: middle;
+                    line-height: 38px;
+                    color: #141414;
+                }
+            }
+
+            a.setup-button {
+                background: #833CFC;
+                border: 1px solid #833CFC;
+                justify-content: center;
+
+                span {
+                    color: #FFFFFF;
+                }
+            }
+
+            button.stop-button {
+                background: #EE1C1CB2;
+                border: 1px solid #EE1C1CB2;
+                justify-content: center;
+
+                span {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .blur {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+    }
+}
+
+.admin-journeys-preview-header {
+    display: block;
+
+    .admin-journeys-header-breadcrumb {
+        margin-bottom: 16px;
+
+        nav.p-breadcrumb {
+            padding: 0;
+            border: none;
+
+            ul li a span {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            ul li:last-child {
+                a span {
+                    color: #141414;
+                }
+            }
+        }
+    }
+
+}
+
+.admin-journeys-preview-subtitle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    width: 800px;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    height: 40px;
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    span {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.admin-journeys-quest-list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media (min-width: 1441px) {
+        gap: 39px;
+    }
+
+    .admin-journey-quest-card {
+        width: 380px;
+        height: 478px;
+        border: 1px solid #1414141A;
+        padding: 16px 16px 20px 16px;
+        border-radius: 8px;
+
+        .admin-journey-quest-card-header {
+
+            .admin-journey-quest-card-title {
+                .admin-journey-quest-card-title-row {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+
+                span.admin-journey-quest-card-title-text {
+                    width: 120px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 22px;
+                }
+
+                span:first-child {
+                    color: #141414B2;
+                }
+
+                span:last-child {
+                    color: #141414;
+                }
+            }
+
+            .admin-journey-quest-card-subtitle {
+                margin-top: 16px;
+                display: flex;
+                justify-content: start;
+                gap: 8px;
+                align-items: center;
+
+                span:first-child {
+                    line-height: 0;
+
+                    img {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+                span:last-child {
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .admin-journey-quest-card-tags {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+
+            >span {
+                padding: 8px 10px 8px 10px;
+                border-radius: 4px;
+                margin-right: 4px;
+                margin-bottom: 4px;
+                height: 36px;
+                border: 1px solid #246CF633;
+                font-size: 13.47px;
+                line-height: 18px;
+                text-align: center;
+                color: #141414B2;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 3px;
+                    vertical-align: middle;
+                }
+
+                span {
+                    font-size: 13.47px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #141414B2;
+                }
+            }
+        }
+
+        .admin-journey-quest-card-content {
+            display: flex;
+            flex-flow: column;
+            gap: 8px;
+            margin-top: 16px;
+
+            div {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.admin-journeys-preview-footer {
+    z-index: 1;
+    height: 110px;
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: end;
+    bottom: 0px;
+    position: fixed;
+    right: 0;
+    gap: 10px;
+    background-color: #FFFFFFCC;
+
+    a {
+        width: 200px;
+        height: 53px;
+        border-radius: 12px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+
+        span {
+            font-size: 16px;
+            line-height: 18px;
+            vertical-align: -webkit-baseline-middle;
+        }
+    }
+
+    a:first-child {
+        border: 1px solid #141414;
+
+        span {
+            color: #141414;
+        }
+    }
+
+    a:last-child {
+        margin-right: 32px;
+        background-color: #833CFC;
+        border: 1px solid #833CFC;
+
+        span {
+            color: #FFFFFF;
+        }
+    }
+}
+
+.journey-setup-container {
+    .quest-calendar-container {
+        width: 50%;
+    }
+}
+
+.admin-journeys-quest-template-header {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+
+    span:first-child {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    span:last-child {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.flex-inline {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.admin-journeys-quest-list-wrapper {
+    height: 700px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.admin-journey-quest-card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 32px !important;
+        height: 32px;
+        border: none !important;
+    }
+
+    button:hover {
+        background-color: #EFF3F6 !important;
+    }
+}
+
+.admin-journey-quest-card-header {
+    position: relative;
+
+    div.dropdown-list-container {
+        position: absolute;
+        z-index: 10;
+        width: 220px;
+        background: white;
+        right: 0;
+        top: 40px;
+    }
+
+    ul.dropdown-list {
+        margin: 0;
+        list-style: none;
+        padding: 8px;
+        border: 1px solid #F2F4F7;
+        box-shadow: 0px 4px 6px -2px #10182808, 0px 12px 16px -4px #10182814;
+
+        li {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            gap: 8px;
+
+            span span {
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+
+        li:hover {
+            background: #EFF3F6;
+        }
+    }
+}
+
+.admin-journeys-quest-list {
+    >button {
+        display: flex;
+        justify-content: center;
+        width: 276px;
+        height: 56px;
+        border-radius: 12px;
+        gap: 10px;
+        background-color: #EFF3F6;
+        border: none;
+        color: #141414;
+    }
+
+    >button:hover {
+        background-color: #EFF3F6;
+        border: none;
+    }
+}
+
+.setup-templates {
+    .admin-journey-quest-card {
+        width: 276px;
+        height: 100%;
+    }
+}
+
+.admin-journey-quest-card-footer {
+    button {
+        width: 100% !important;
+        height: 38px !important;
+        margin-top: 16px;
+    }
+}
+
+/*************** Admin Journeys end *****************/
+
+/*************** Admin Settings end *****************/
+.admin-setting-header {
+    .admin-setting-title {
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            text-align: left;
+            margin: 0px;
+        }
+    }
+
+    .admin-setting-logo {
+        display: flex;
+        justify-content: start;
+        margin-top: 36px;
+        gap: 24px;
+
+        .logo-div {
+            border-radius: 8px;
+            width: 100px;
+            height: 100px;
+            background: #1414141A;
+        }
+
+        .logo-img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .admin-setting-project-name {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            h3 {
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 32px;
+                color: #141414;
+                margin: 16px 0px 0px 0px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                color: #141414;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.admin-setting-content {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    .admin-setting-content-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .admin-setting-block {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            padding: 24px;
+            gap: 12px;
+            background-color: #EFF3F6;
+
+            .admin-setting-block-title h3 {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 24px;
+                color: #141414;
+                margin: 0;
+            }
+
+            .block-input {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #141414;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 6px;
+
+                    img {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+                input {
+                    width: 300px;
+                    height: 54px;
+                    border-radius: 8px;
+                    padding: 16px;
+                    gap: 10px;
+                    background-color: white;
+                    color: #141414;
+                    border: 1px solid #1414141A;
+                }
+
+                a {
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #305CF6;
+                }
+            }
+
+            .tag-container {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 9px;
+
+                .tag-button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 8px;
+                    padding: 8px 12px 8px 12px;
+                    background-color: white;
+                    border: 0.75px solid #CDDDE9;
+
+                    span:first-child {
+                        font-size: 13.47px;
+                        line-height: 13.47px;
+                        color: #141414;
+                    }
+
+                    span:last-child {
+                        text-align: center;
+                        font-size: 0.5em;
+                        width: 5px;
+                        height: 5px;
+                    }
+                }
+
+                button {
+                    border-radius: 8px;
+                    padding: 8px 12px 8px 12px;
+                    background-color: white;
+                    border: 0.75px solid #305CF6;
+                    color: #305CF6;
+                    font-size: 13.47px;
+                    line-height: 13.47px;
+                }
+            }
+        }
+    }
+
+    .admin-setting-content-right {
+        flex: 1;
+
+        .admin-setting-content-upload {
+            height: 480px;
+            border-radius: 8px;
+            background-color: #EFF3F6;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 24px;
+
+            .admin-setup-title h3 {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 24px;
+                color: #141414;
+                margin: 0;
+            }
+
+            .dropzone-div {
+                margin-top: 16px;
+                height: 268px;
+                background-color: white;
+                border-radius: 8px;
+                border: 1px solid #305CF6;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .dropzone-text {
+                    p:nth-child(2) {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #305CF6;
+                    }
+
+                    p:last-child {
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #1414144D;
+                    }
+                }
+            }
+
+            .quest-setup-img-containter .file-item {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                border-radius: 8px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                span.img-delete {
+                    font-size: 0.75em;
+                    width: 18px;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    background-color: white;
+                    height: 18px;
+                    text-align: center;
+                    vertical-align: middle;
+                    line-height: 18px;
+                    border-radius: 4px;
+                    border: 0.75px solid #CDDDE9;
+                }
+            }
+        }
+    }
+}
+
+.admin-setting-member-table {
+    margin-top: 40px;
+
+    .admin-setting-member-table-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+            color: #141414;
+        }
+
+        button {
+            width: 155px;
+            height: 42px;
+            border-radius: 12px;
+            padding: 10px;
+            color: #141414;
+            border: 1px solid #141414;
+            background-color: white;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    .admin-setting-member-table-content {
+        margin-top: 16px;
+
+        .name-td {
+            display: flex;
+            justify-content: start;
+            gap: 16px;
+            align-items: center;
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 100px;
+            }
+
+            span {
+                font-size: 16px;
+                line-height: 22px;
+                color: #667085;
+            }
+        }
+
+        tr,
+        thead {
+            background-color: #EFF3F6 !important;
+        }
+
+        td button {
+            border-radius: 4px;
+            background-color: #EFF3F6;
+            border: 0.75px solid #CDDDE9;
+            margin-right: 10px;
+            color: #141414;
+        }
+    }
+}
+
+.quest-reward-file-list {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+
+    .quest-reward-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.reward-nft-button.active {
+    background-color: #1BC28C !important;
+    color: white !important;
+    border: none;
+}
+
+.admin-journeys-header-title {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+
+    a.create-button {
+        background: #833CFC;
+        border: 1px solid #833CFC;
+        color: white;
+        text-decoration: none;
+        width: 110px;
+        height: 38px;
+        text-align: center;
+        border-radius: 12px;
+        justify-content: center;
+
+        span {
+            vertical-align: middle;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 38px;
+        }
+    }
+}
+
+
+/*************** Admin Settings end *****************/

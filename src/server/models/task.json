@@ -1,0 +1,89 @@
+{
+    "Off-chain": {
+        "Twitter": {
+            "actions": [
+                {
+                    "actionName": "Follow @name on Twitter",
+                    "actions": [
+                        {
+                            "label": "A link to the account",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Retweet a tweet",
+                    "actions": [
+                        {
+                            "label": "A link to the tweet",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Tweet on Twitter",
+                    "actions": [
+                        {
+                            "label": "The text of what the tweet should contain and the number of characters",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Leave a comment under a tweet",
+                    "actions": [
+                        {
+                            "label": "A link to the tweet",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Like a tweet",
+                    "actions": [
+                        {
+                            "label": "A link to the tweet",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Quote a tweet",
+                    "actions": [
+                        {
+                            "label": "A link to the tweet",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Check for a Twitter name that includes specified characters",
+                    "actions": [
+                        {
+                            "label": "A text of which characters Twitter name must include",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Check for a Twitter bio that includes specified text",
+                    "actions": [
+                        {
+                            "label": "URL to the user’s profile from which you need to view the bio",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                },
+                {
+                    "actionName": "Create a meme content",
+                    "actions": [
+                        {
+                            "label": "A text with what should have a tweet meme",
+                            "inputType": "CHAR"
+                        }
+                    ]
+                }
+            ]
+        }
+    }   
+}

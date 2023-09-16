@@ -1,0 +1,8 @@
+# netlify.toml
+
+[build]
+  # This is the command to build your site. If you're using Create React App, this is the standard build command.
+  command = "CI= npm run build"
+
+  # This is the directory that your build command will output to. For Create React App, it outputs to the 'build' directory.
+  publish = "build/"

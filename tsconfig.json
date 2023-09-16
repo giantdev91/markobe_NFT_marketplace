@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    // Base directory for resolving non-relative module names.
+    "baseUrl": "./",
+    // Specifies root folders for your source files.
+    "rootDirs": [
+      "src"
+    ],
+    // Directory to output the compiled files.
+    "outDir": "dist",
+    // List of libraries to include in the compilation.
+    "lib": [
+      "es2020",
+      "dom" // include this if your environment includes the DOM.
+    ],
+    // Specify ECMAScript target version.
+    "target": "es2017",
+    // Specifies the module system.
+    "module": "es2022",
+    // Resolve modules using Node.js module resolution strategy.
+    "moduleResolution": "node",
+    // Enables compatibility with Babel/TypeScript emit to ES Modules import.
+    "esModuleInterop": true,
+    // Includes types for Node.js global objects and modules.
+    "types": [
+      "node"
+    ],
+    // Allows JavaScript files to be included in your project.
+    "allowJs": true,
+    // Generate corresponding '.d.ts' file for each output '.js' file.
+    "declaration": true,
+    // Enables incremental compilation by reading/writing information from disk to detect what needs to be re-compiled.
+    "incremental": true,
+    // Enables all strict type checking options.
+    "strict": false,
+    // Enable removing comments from output.
+    "removeComments": true,
+    // Provides detailed error messages.
+    "extendedDiagnostics": true
+  },
+  // Files or patterns to exclude from the project.
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  // Files or patterns to include in the project.
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.js"
+  ]
+}

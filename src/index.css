@@ -1,0 +1,13 @@
+
+body {
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* .card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+} */

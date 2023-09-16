@@ -1,0 +1,85 @@
+{
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.15",
+    "@fontsource/poppins": "^4.5.10",
+    "@prisma/client": "^4.11.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "@tanstack/react-query": "^4.27.0",
+    "@trpc/client": "^10.16.0",
+    "@trpc/next": "^10.16.0",
+    "@trpc/react-query": "^10.16.0",
+    "@trpc/server": "^10.16.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "chart.js": "^3.9.1",
+    "cuid": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "dotenv-safe": "^8.2.0",
+    "draft-js": "^0.11.7",
+    "draft-js-export-html": "^1.4.1",
+    "flowbite-datepicker": "^1.2.2",
+    "graphql": "^16.6.0",
+    "hardhat": "^2.13.1",
+    "moment": "^2.29.4",
+    "next": "13.2.4",
+    "node-fetch": "^2.6.1",
+    "path-browserify": "^1.0.1",
+    "primeflex": "^3.3.1",
+    "primeicons": "^6.0.1",
+    "primereact": "^9.5.0",
+    "prisma": "^4.11.0",
+    "react": "18.2.0",
+    "react-calendar": "^4.2.1",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "18.2.0",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-dropzone": "^14.2.3",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.1",
+    "react-scripts": "^5.0.1",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.1",
+    "typescript": "^4.0.0",
+    "webfontloader": "^1.6.28"
+  },
+  "description": "Mark0",
+  "keywords": [
+    "primereact",
+    "react",
+    "starter"
+  ],
+  "main": "src/index.js",
+  "name": "primereact_demo",
+  "resolutions": {
+    "graphql": "^16.8.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "postbuild": "rimraf build/**/*.map",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "customize-cra": "^1.0.0",
+    "fetch-mock": "^9.11.0",
+    "react-app-rewired": "^2.2.1",
+    "sass": "^1.66.1",
+    "tailwindcss": "^3.3.2"
+  }
+}
